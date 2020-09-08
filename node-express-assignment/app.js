@@ -7,6 +7,7 @@ const http = require('http');
 
 var dishRouter = require('./routes/dishRouter');
 var leadersRouter = require('./routes/leaderRouter');
+var promoRouter = require('./routes/promoRouter');
 
 const hostname = 'localhost';
 const port = 3000;
@@ -22,6 +23,7 @@ app.use(express.json());
 
 app.use('/dishes', dishRouter);
 app.use('/leaders', leadersRouter);
+app.use('/promotions', promoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
