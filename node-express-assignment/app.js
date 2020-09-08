@@ -21,7 +21,7 @@ app.use(logger('dev'));
 app.use(express.json());
 
 app.use('/dishes', dishRouter);
-app.use('/users', leadersRouter);
+app.use('/leaders', leadersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
